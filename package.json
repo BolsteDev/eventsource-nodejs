@@ -1,0 +1,25 @@
+{
+  "name": "eventsource-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nodemon --watch client --watch server --watch index.js index.js --exec 'yarn run build && babel-node'",
+    "once": "babel-node index.js",
+    "build": "webpack"
+  },
+  "author": "Ivan Montiel <imontiel@bolste.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-bolste": "^1.0.1",
+    "nodemon": "^1.11.0",
+    "webpack": "^1.14.0"
+  }
+}
